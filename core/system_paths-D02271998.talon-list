@@ -1,0 +1,18 @@
+list: user.system_paths
+hostname: D02271998
+-
+user: C:\Users\ansaldoginee2
+profile: C:\Users\ansaldoginee2
+desktop: C:\Users\ansaldoginee2\Desktop
+desk: C:\Users\ansaldoginee2\Desktop
+documents: C:\Users\ansaldoginee2\Documents
+docks: C:\Users\ansaldoginee2\Documents
+downloads: C:\Users\ansaldoginee2\Downloads
+music: C:\Users\ansaldoginee2\Music
+pictures: C:\Users\ansaldoginee2\Pictures
+videos: C:\Users\ansaldoginee2\Videos
+talon home: C:\Users\ansaldoginee2\AppData\Roaming\talon
+talon user: C:\Users\ansaldoginee2\AppData\Roaming\talon\user
+experiments: "M:\\LPD-MIS members' data\\Eduard Ansaldo\\Experiments"
+locus: G:\EduardAnsaldo
+LPD: "M:\\LPD-MIS members' data\\Eduard Ansaldo"
