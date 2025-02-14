@@ -31,6 +31,6 @@ settings():
 # <pause> "talon wake talon wake" <pause>, it'll still work.
 
 ^(welcome back)+$:
-    user.mouse_wake()
-    user.history_enable()
+    #user.mouse_wake()
+    #user.history_enable()
     user.talon_mode()
