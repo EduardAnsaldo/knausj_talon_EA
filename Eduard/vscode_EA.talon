@@ -18,6 +18,9 @@ new mark:
     sleep(1000ms)
     key("escape")
     key("m")
+    sleep(300ms)
+    key("enter")
+
 
 delete cell: 
     key("escape")

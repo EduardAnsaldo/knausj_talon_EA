@@ -23,6 +23,9 @@ new [graph|block]:
 ^bullet: "* "
 placeholder: " PLACEHOLDER"
 
+reference: ' (REFERENCE)'
+references: ' (REFERENCES)'
+
 
 
 
