@@ -1,4 +1,4 @@
-tag: user.r
+code.language: r
 -
 run that:key(ctrl-enter)    
 go line: key(alt-shift-G)
