@@ -3,9 +3,23 @@ phrase: do while
 insertionScope: statement
 ---
 
-language: javascript | java
+language: c | cpp | csharp | java | javascript | typescript | javascriptreact | typescriptreact
 -
 do {
     $0
 } while($1);
+---
+
+language: lua
+-
+repeat
+    $0
+until $1
+---
+
+language: php
+-
+do {
+    $0
+} while ($1);
 ---
