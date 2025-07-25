@@ -10,7 +10,7 @@ drill: key(delete)
 
 slapper: 
 
-exit: app.window_close()
+exit: key('cmd-q')
 
 
 down: key(down)
@@ -31,7 +31,7 @@ restart talon: user.talon_relaunch()
 
 right click: key(shift-f10)
   
-work email: insert("eduard.ansaldogine@nih.gov")
+work email: insert("EAnsaldo@scripps.edu")
 
 personal email: insert("eduardansaldogine@gmail.com")
 

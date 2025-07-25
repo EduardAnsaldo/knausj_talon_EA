@@ -1,4 +1,5 @@
-from talon import Context, actions
+from talon import Context, actions, ui
+from talon.mac import applescript
 
 ctx = Context()
 ctx.matches = r"""
@@ -30,10 +31,16 @@ class AppActions:
         actions.key("cmd-w")
 
     def window_hide():
-        actions.key("cmd-m")
+        ui.active_app().element.AXHidden = True
 
     def window_hide_others():
-        actions.key("cmd-alt-h")
+        applescript.run(
+            """
+use framework "Foundation"
+set NSWorkspace to current application's class "NSWorkspace"
+NSWorkspace's sharedWorkspace's hideOtherApplications()
+"""
+        )
 
     def window_open():
         actions.key("cmd-n")
@@ -49,3 +56,9 @@ class AppActions:
 class UserActions:
     def switcher_focus_last():
         actions.key("cmd-tab")
+
+    def window_minimize():
+        if window := ui.active_window():
+            window.minimized = 1
+            return
+        actions.key("cmd-m")

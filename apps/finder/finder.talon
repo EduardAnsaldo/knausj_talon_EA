@@ -5,9 +5,11 @@ tag(): user.address
 tag(): user.file_manager
 tag(): user.navigation
 tag(): user.tabs
-preferences: key(cmd-,)
 options: key(cmd-j)
+inspector: key(cmd-alt-i)
+preview: key(cmd-shift-p)
 search: key(cmd-alt-f)
+toolbar: key(cmd-alt-t)
 
 # bit of a mouthful, but it's probably not the kind of thing you'd be saying frequently
 sort by none: key(ctrl-alt-cmd-0)
@@ -23,7 +25,19 @@ column view: key(cmd-3)
 list view: key(cmd-2)
 gallery view: key(cmd-4)
 
-trash it: key(cmd-backspace)
+trash that: key(cmd-backspace)
+empty trash: key(cmd-shift-backspace)
+go trash: user.finder_open_trash()
 
-hide [finder]: key(cmd-h)
-hide others: app.window_hide_others()
+open that: key(cmd-down)
+move it here: key(cmd-alt-v)
+eject that: key(cmd-e)
+
+open close: key(cmd-alt-down)
+go parent close: key(cmd-alt-up)
+
+# The default command for this doesn't match Mac standard terminology
+get info: user.file_manager_show_properties()
+
+Copy path: user.menu_select('Edit|Copy “menu_select_mac.talon” as Pathname')
+user.menu_select('Edit|Copy “finder.talon” as Pathname')

@@ -296,7 +296,7 @@ preview markdown: user.vscode("markdown.showPreview")
 
 # Splits (Maybe move to splits.py and splits.talon)
 split max: user.vscode("workbench.action.maximizeEditor")
-split reset: user.vscode("workbench.action.evenEditorWidths")
+split reset: user.vscode("workbench.action.resetViewLocations")
 cross: user.vscode("workbench.action.focusNextGroup")
 crossing: 
     user.vscode("workbench.action.focusNextGroup")

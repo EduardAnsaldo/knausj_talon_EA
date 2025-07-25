@@ -12,19 +12,12 @@ run notebook: user.vscode("notebook.execute")
 cell edit: user.vscode("notebook.cell.edit")
 cell last edit: user.vscode("notebook.focusPreviousEditor")
 cell exit: user.vscode("notebook.cell.quitEdit")
-new cell: user.vscode("jupyter.notebookeditor.addcellbelow")
-new mark:
-    user.vscode("jupyter.notebookeditor.addcellbelow")
-    sleep(1000ms)
-    key("escape")
-    key("m")
-    sleep(300ms)
-    key("enter")
+new cell: user.vscode("notebook.cell.insertCodeCellBelow")
+new mark: user.vscode("notebook.cell.insertMarkdownCellBelow")
 
 
 delete cell: 
-    key("escape")
-    key("d:2")
+    user.vscode('notebook.cell.delete')
 
 running: user.vscode('notebook.revealRunningCell')
 clear notebook outputs: user.vscode('notebook.clearAllCellsOutputs')
@@ -39,23 +32,39 @@ clear cell output: user.vscode('notebook.cell.clearOutputs.')
 
 equal: ' = '
 
-new hidden mark: 
-    user.vscode("jupyter.notebookeditor.addcellbelow")
-    sleep(1000ms)
-    key("escape")
-    key("m")    
-    key("enter")
+new hidden cell:
+    user.vscode("notebook.cell.insertCodeCellBelow")    
+    '#| output: false\n'
+    '#| echo: false\n'
+    
+new hidden mark:
+    user.vscode('notebook.cell.insertMarkdownCellBelow')
     ':::'
     '{'
     '.'
-    'content-hidden}\n'
+   "content-visible when-meta='verbose'}\n"
     '\n'
     ':::'
     key('up')
 
-new hidden cell:
-    user.vscode("jupyter.notebookeditor.addcellbelow")    
-    
-    '#| output: false\n'
-    '#| echo: false\n'
+new hidden mark processing:
+    user.vscode('notebook.cell.insertMarkdownCellBelow')
+    ':::'
+    '{'
+    '.'
+   "content-visible when-meta='processing'}\n"
+    '\n'
+    ':::'
+    key('up')
+
+new hidden cell processing:
+    user.vscode("notebook.cell.insertCodeCellBelow")
+    ':::'
+    '{'
+    '.'
+   "content-visible when-meta='processing'}\n"
+    '\n\n\n'
+    ':::'
+    key('up')
+    key('up')
     

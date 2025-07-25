@@ -1,5 +1,5 @@
 list: user.system_paths
-hostname: ConstanidessMBP.ddns.scripps.edu
+hostname: Constantinidess-MacBook-Pro   
 -
 user: /Users/eduardansaldo
 desktop: /Users/eduardansaldo/Desktop
@@ -18,4 +18,3 @@ dropbox: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine
 Mike's Lab: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine/Constantinides lab/Experiments/Eduard
 Renan's lab: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine/De Carvalho lab/Lab-shared/Experiments/Eduard A. Gine (EG)
 Shika's lab: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine/Ramanan
-

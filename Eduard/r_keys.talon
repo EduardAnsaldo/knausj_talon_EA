@@ -1,6 +1,6 @@
 code.language: r
 -
-run that:key(ctrl-enter)    
+run that:key(cmd-enter)    
 go line: key(alt-shift-G)
 
 #ggplot2 commands
