@@ -11,19 +11,19 @@ interactive session:
 	"salloc"
 	key(enter)	
 
-go Mike's lab: 
+Mike's lab: 
 	"cd /gpfs/group/constantinides/Eduard_Ansaldo/"
 	key(enter)
 	"ls"
 	key(enter)
 
-go Renan's lab:
+Renan's lab:
 	"cd /gpfs/group/de_carvalho/"
 	key(enter)
 	"ls"
 	key(enter)
 
-go Shika's lab:
+Shika's lab:
 	"cd /gpfs/group/constantinides/Eduard_Ansaldo/Ramanan_collaboration/"
 	key(enter)
 	"ls"
@@ -31,6 +31,18 @@ go Shika's lab:
 
 Copy to server Mike:
  	"scp -r ./* eansaldo@login02.scripps.edu:/gpfs/group/constantinides/Eduard_Ansaldo/"
+
+Copy from server Mike:
+ 	"scp -r eansaldo@login02.scripps.edu:/gpfs/group/constantinides/Eduard_Ansaldo//back ./"
+	key(left:4)
+
+Copy from server Renan:
+ 	"scp -r eansaldo@login02.scripps.edu:/gpfs/group/de_carvalho// ./"
+	key(left:4)
+
+Copy from server Shika:
+ 	"scp -r eansaldo@login02.scripps.edu:/gpfs/group/constantinides/Eduard_Ansaldo/Ramanan_collaboration/ ./"
+	key(left:4)
 
 Copy to server Renan:
  	"scp -r ./* eansaldo@login02.scripps.edu:/gpfs/group/de_carvalho/"
@@ -57,6 +69,10 @@ open$:
 remove folder:
 	"rm -rf "
 
+new folder: 'mkdir '
+
+less: 'less '
+
 my folder: 
  	"cd ~"
 	key(enter)
@@ -65,6 +81,9 @@ my folder:
 
 new job:
  	"xargs -0 -a commands.txt python ~/scripts/create_sbatch_for_command_EA.py --command "
+
+create jobs:
+	'python ~/scripts/create_sbatch_for_command_individual_jobs.py\n'
 
 submit job:
 	"sbatch jo"
