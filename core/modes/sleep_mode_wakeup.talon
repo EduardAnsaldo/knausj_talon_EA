@@ -25,6 +25,6 @@ not tag: user.deep_sleep
 # <pause> "talon wake talon wake" <pause>, it'll still work.
 
 ^(welcome back)+$:
-    user.mouse_wake()
+    # user.mouse_wake()
     # user.history_enable()
     user.talon_mode()

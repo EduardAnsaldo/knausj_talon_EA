@@ -279,21 +279,6 @@ curse redo: user.vscode("cursorRedo")
 select word: user.vscode("editor.action.addSelectionToNextFindMatch")
 skip word: user.vscode("editor.action.moveSelectionToNextFindMatch")
 
-# jupyter
-cell next: user.vscode("notebook.focusNextEditor")
-cell last: user.vscode("notebook.focusPreviousEditor")
-cell run above: user.vscode("notebook.cell.executeCellsAbove")
-cell run: user.vscode("notebook.cell.execute")
-
-install local: user.vscode("workbench.extensions.action.installVSIX")
-preview markdown: user.vscode("markdown.showPreview")
-
-
-
-
-
-
-
 # Splits (Maybe move to splits.py and splits.talon)
 split max: user.vscode("workbench.action.maximizeEditor")
 split reset: user.vscode("workbench.action.resetViewLocations")

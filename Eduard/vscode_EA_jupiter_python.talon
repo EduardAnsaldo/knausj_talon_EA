@@ -1,5 +1,6 @@
 #custom vscode commands go here
 app: vscode
+code.language: python
 -
 
 
@@ -30,7 +31,6 @@ interrupt: user.vscode('notebook.cancelExecution')
 go failed: user.vscode('notebook.revealLastFailedCell')
 clear cell output: user.vscode('notebook.cell.clearOutputs.')
 
-equal: ' = '
 
 new hidden cell:
     user.vscode("notebook.cell.insertCodeCellBelow")    

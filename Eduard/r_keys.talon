@@ -3,6 +3,8 @@ code.language: r
 run that:key(cmd-enter)    
 go line: key(alt-shift-G)
 
+equal: ' = '
+
 #ggplot2 commands
 
 plot: 
@@ -67,3 +69,4 @@ chain here:
 
 object: 'seurat'
 metadata: 'seurat@meta.data'
+

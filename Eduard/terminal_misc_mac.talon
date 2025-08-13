@@ -1,6 +1,6 @@
-os: mac
-and app.bundle: com.apple.Terminal
+tag: terminal
 -
+	
 jupiter: "jupyter notebook "	
  
 connect to garibaldi: 
@@ -33,11 +33,11 @@ Copy to server Mike:
  	"scp -r ./* eansaldo@login02.scripps.edu:/gpfs/group/constantinides/Eduard_Ansaldo/"
 
 Copy from server Mike:
- 	"scp -r eansaldo@login02.scripps.edu:/gpfs/group/constantinides/Eduard_Ansaldo//back ./"
+ 	"scp -r eansaldo@login02.scripps.edu:/gpfs/group/constantinides/Eduard_Ansaldo/ ./"
 	key(left:4)
 
 Copy from server Renan:
- 	"scp -r eansaldo@login02.scripps.edu:/gpfs/group/de_carvalho// ./"
+ 	"scp -r eansaldo@login02.scripps.edu:/gpfs/group/de_carvalho/ ./"
 	key(left:4)
 
 Copy from server Shika:
@@ -85,6 +85,12 @@ new job:
 create jobs:
 	'python ~/scripts/create_sbatch_for_command_individual_jobs.py\n'
 
+create dependent jobs:
+	'python ~/scripts/create_sbatch_for_command_individual_jobs.py --dependent TRUE\n'
+
+copy outputs:
+	'bash ~/scripts/bash_script_outputs.sh\n'
+
 submit job:
 	"sbatch jo"
 	key(tab)
@@ -99,6 +105,10 @@ cancel job:
 
 download sequencing data:
 	'wget --no-check-certificate -r '
+
+initialize analysis folder:
+	'Initialize_analysis_folder.py ./'
+	key(enter)
 
 # TCR modules:
 # 	"module load BLAST+/2.2.31-goolf-1.7.20-Python-2.7.9"
