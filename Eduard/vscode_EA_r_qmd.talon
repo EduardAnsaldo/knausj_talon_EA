@@ -1,6 +1,6 @@
 #custom vscode commands go here
 app: vscode
-code.language: r
+win.file_ext: .qmd
 -
 
 
