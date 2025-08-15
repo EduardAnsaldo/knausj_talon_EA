@@ -1,5 +1,6 @@
 #custom vscode commands go here
-app: vscode
+app.bundle: com.microsoft.VSCode
+app.bundle: co.posit.positron
 -
 tag(): user.find_and_replace
 tag(): user.line_commands
@@ -31,7 +32,7 @@ symbol hunt [<user.text>]:
     user.vscode("workbench.action.gotoSymbol")
     sleep(50ms)
     insert(text or "")
-
+    
 symbol hunt all [<user.text>]:
     user.vscode("workbench.action.showAllSymbols")
     sleep(50ms)

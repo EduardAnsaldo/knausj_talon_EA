@@ -1,5 +1,6 @@
 #custom vscode commands go here
-app: vscode
+app.bundle: co.posit.positron
+app.bundle: com.microsoft.VSCode
 win.file_ext: .qmd
 -
 
@@ -8,15 +9,15 @@ win.file_ext: .qmd
 cell next: user.vscode("quarto.goToNextCell")
 cell last: user.vscode("quarto.goToPreviousCell")
 format cell: user.vscode("quarto.formatCell")
-run head notebook: user.vscode("quarto.runCellsAbove")
-run tail notebook: user.vscode("quarto.runCellsBelow")
-run cell here: user.vscode("quarto.runCurrentCell")
-run cell: user.vscode("quarto.runCurrentAdvance")
-run next cell: user.vscode("quarto.runNextCell")
-run last cell: user.vscode("quarto.runPreviousCell")
+notebook run head: user.vscode("quarto.runCellsAbove")
+notebook run tail: user.vscode("quarto.runCellsBelow")
+cellbrun here: user.vscode("quarto.runCurrentCell")
+cell run: user.vscode("quarto.runCurrentAdvance")
+cell run next: user.vscode("quarto.runNextCell")
+cell run last: user.vscode("quarto.runPreviousCell")
 run that: user.vscode("quarto.runCurrent")
-run notebook: user.vscode("quarto.runAllCells")
-new cell: user.vscode("quarto.insertCodeCell")
+notebook run: user.vscode("quarto.runAllCells")
+cell new: user.vscode("quarto.insertCodeCell")
 
 quarto preview: user.vscode("quarto.previewScript")
 

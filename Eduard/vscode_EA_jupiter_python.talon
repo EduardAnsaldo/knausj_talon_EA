@@ -1,6 +1,7 @@
 #custom vscode commands go here
-app: vscode
-code.language: python
+app.bundle: co.posit.positron
+app.bundle: com.microsoft.VSCode
+win.file_ext: .ipynb
 -
 
 
