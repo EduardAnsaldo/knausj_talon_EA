@@ -108,6 +108,9 @@ download sequencing data:
 
 initialize analysis folder:
 	'Initialize_analysis_folder.py ./'
+
+copy analysis folder:
+	'copy_analysis_folder.py'
 	key(enter)
 
 # TCR modules:

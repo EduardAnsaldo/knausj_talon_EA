@@ -1,3 +1,4 @@
+#Adding Positron commands, building on Nicolas Riley's personal repo
 app: positron
 -
 notebook new: user.vscode("quarto.newNotebook")
@@ -12,7 +13,6 @@ sec plots: user.vscode("workbench.panel.positronPlots.focus")
 
 help that: user.vscode("positron.help.showHelpAtCursor")
 
-
 #Plot Commands
 
 plot copy: user.vscode("workbench.action.positronPlots.copy")
@@ -20,5 +20,9 @@ plot clear: user.vscode("workbench.action.positronPlots.clear")
 plot open: user.vscode("workbench.action.positronPlots.openEditor")
 plot refresh: user.vscode("workbench.action.positronPlots.refresh")
 plot next: user.vscode("workbench.action.positronPlots.next")
-plot previous: user.vscode("workbench.action.positronPlots.previous")
+plot (previous | last): user.vscode("workbench.action.positronPlots.previous")
 plot toggle: user.vscode("workbench.action.positron.togglePlots")
+
+#Console Commands
+console clear: user.vscode("workbench.action.positronConsole.clearConsole")
+console interrupt: user.vscode("workbench.action.languageRuntime.interrupt")
