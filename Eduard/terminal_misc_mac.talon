@@ -60,6 +60,16 @@ katie upper:
 	"ls"
 	key(enter)
 
+katie any [<user.text>]:
+	'cd *'
+	insert(text)
+	'*'
+	sleep(100ms)
+	key(enter)
+	"ls"
+	sleep(100ms)
+	key(enter)
+
 open$:
 	key(tab)
 	key(enter)
@@ -113,6 +123,18 @@ copy analysis folder:
 	'copy_analysis_folder.py'
 	key(enter)
 
+update gitignore:
+	'update_gitignore.py'
+	key(enter)
+
+update dropbox:
+	'update_dropbox.py'
+	key(enter)
+
+dry run update dropbox:
+	'update_dropbox_dry_run.py'
+	key(enter)
+
 # TCR modules:
 # 	"module load BLAST+/2.2.31-goolf-1.7.20-Python-2.7.9"
 # 	key(enter)
@@ -123,6 +145,7 @@ copy analysis folder:
 # katie upper:
 # 	"cd .."
 # 	key(enter)
+
 # 	"ls"
 # 	key(enter)
 

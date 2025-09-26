@@ -1,0 +1,21 @@
+list: user.system_paths
+hostname: Eduards-MacBook-Pro
+-
+user: /Users/eduardansaldo
+desktop: /Users/eduardansaldo/Desktop
+desk: /Users/eduardansaldo/Desktop
+documents: /Users/eduardansaldo/Documents
+docks: /Users/eduardansaldo/Documents
+downloads: /Users/eduardansaldo/Downloads
+music: /Users/eduardansaldo/Music
+pictures: /Users/eduardansaldo/Pictures
+videos: /Users/eduardansaldo/Videos
+talon home: /Users/eduardansaldo/.talon
+talon recordings: /Users/eduardansaldo/.talon/recordings
+talon user: /Users/eduardansaldo/.talon/user
+home: /Users/eduardansaldo
+dropbox: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine
+Mike's Lab: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine/Constantinides lab/Experiments/Eduard
+Renan's lab: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine/De Carvalho lab/Lab-shared/Experiments/Eduard A. Gine (EG)
+Shika's lab: /Users/eduardansaldo/Scripps Research Dropbox/Eduard Ansaldo Gine/Ramanan
+
