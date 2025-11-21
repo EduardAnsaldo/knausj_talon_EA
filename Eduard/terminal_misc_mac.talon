@@ -135,6 +135,9 @@ dry run update dropbox:
 	'update_dropbox_dry_run.py'
 	key(enter)
 
+extract processing statistics:
+	'extract_processing_statistics.py'
+
 # TCR modules:
 # 	"module load BLAST+/2.2.31-goolf-1.7.20-Python-2.7.9"
 # 	key(enter)

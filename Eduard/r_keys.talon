@@ -7,10 +7,10 @@ equal: ' = '
 
 #ggplot2 commands
 
-plot: 
-    'ggplot(aes())'
-    key(left)
-    key(left) 
+# plot: 
+#     'ggplot(aes())'
+#     key(left)
+#     key(left) 
 
 aes: insert('aes')
 
