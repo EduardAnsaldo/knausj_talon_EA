@@ -15,7 +15,7 @@ cap: user.dictation_format_cap()
 ^(no space | no-space) that$: user.dictation_reformat_no_space()
 
 # Eduard Commands
-new [graph|block]:
+new graph:
     edit.line_insert_down()
     edit.line_insert_down()
     user.dictation_format_reset()
@@ -23,8 +23,8 @@ new [graph|block]:
 ^bullet: "* "
 placeholder: " PLACEHOLDER"
 
-reference: ' (REFERENCE)'
-references: ' (REFERENCES)'
+insert reference: ' (REFERENCE)'
+insertreferences: ' (REFERENCES)'
 
 
 

@@ -244,6 +244,9 @@ terminal toggle: user.vscode_and_wait("workbench.action.terminal.toggleTerminal"
 terminal scroll up: user.vscode("workbench.action.terminal.scrollUp")
 terminal scroll down: user.vscode("workbench.action.terminal.scrollDown")
 terminal <number_small>: user.vscode_terminal(number_small)
+terminal off: 
+    user.vscode_and_wait("workbench.action.terminal.toggleTerminal")
+    user.vscode_and_wait("workbench.action.terminal.toggleTerminal")
 
 task run [<user.text>]:
     user.vscode("workbench.action.tasks.runTask")

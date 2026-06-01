@@ -24,5 +24,7 @@ plot (previous | last): user.vscode("workbench.action.positronPlots.previous")
 plot toggle: user.vscode("workbench.action.positron.togglePlots")
 
 #Console Commands
-console clear: user.vscode("workbench.action.positronConsole.clearConsole")
+console clear: 
+    key("ctrl-c")
+    user.vscode("workbench.action.positronConsole.clearConsole")
 console interrupt: user.vscode("workbench.action.languageRuntime.interrupt")

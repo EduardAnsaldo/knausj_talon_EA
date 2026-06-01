@@ -94,3 +94,70 @@ figure <number> by <number>:
     sleep(100ms)
     insert('\n')
     key(backspace:2)
+
+## RevealJS:
+
+slide new: 
+    key(down)
+    insert('\n')
+    insert('##')
+    insert('\n\n')
+    key(up:2)
+    key(right:2)
+    key(space)
+
+slide columns:
+    key(down)
+    insert('\n')
+    insert('::::: {{.columns}}\n\n\n\n')
+    insert(':::::\n\n')
+    key(up:4)
+    
+
+slide columns two:
+    insert('::::: {{.columns}}\n\n')
+    insert(':::: {{.column width="50%"}}\n\n\n\n')
+    insert('::::\n\n')
+    insert(':::: {{.column width="50%"}}\n\n\n\n')
+    insert('::::\n\n')
+    insert(':::::\n\n')
+    key(up:12)
+
+slide columns three:
+    insert('::::: {{.columns}}\n\n')
+    insert(':::: {{.column width="33%"}}\n\n\n\n')
+    insert('::::\n\n')
+    insert(':::: {{.column width="33%"}}\n\n\n\n')
+    insert('::::\n\n')
+    insert(':::: {{.column width="33%"}}\n\n\n\n')
+    insert('::::\n\n')
+    insert(':::::\n\n')
+    key(up:18)
+
+slide column width <number>:
+    key(down)
+    insert('\n')
+    insert(':::: {{.column width="')
+    insert(number)
+    insert('%"}}\n\n\n\n')
+    insert('::::\n\n')
+    key(up:4)
+
+slide fragment:
+    insert('::: {{.fragment}}\n\n\n\n')
+    insert(':::')
+    key(up:2)
+
+slide fragment here:
+    edit.select_line()
+    edit.cut()
+    insert('::: {{.fragment}}\n\n\n\n')
+    insert(':::')
+    key(up:2)
+    edit.paste()
+
+    
+
+
+
+

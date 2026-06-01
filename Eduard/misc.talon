@@ -27,7 +27,6 @@ stack: ":"
  
 nope: edit.undo()
 
-restart talon: user.talon_relaunch()
 
 right click: key(shift-f10)
   
@@ -44,9 +43,6 @@ dasher: insert(" - ")
 
 over: skip()
 
-
-^talon restart confirm$: user.talon_restart()
-^talon quit confirm$: user.talon_quit()
 
 spin:
     key(right)

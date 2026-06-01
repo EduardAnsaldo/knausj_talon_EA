@@ -1,19 +1,16 @@
-app: Microsoft powerpoint
 mode: sleep
 -
-[<phrase>] next [<phrase>]:
-    key(right)
-    
-[<phrase>] forward [<phrase>]:
-    key(right)
 
-[<phrase>] aloft [<phrase>]:
-    key(right)
+# [<phrase>] go next [<phrase>]:
+#     key(right)
     
-[<phrase>] go back [<phrase>]:
-    key(left)
+# [<phrase>] go forward [<phrase>]:
+#     key(right)
     
-[<phrase>] jump <user.number_string>:
-    "{number_string}"
-    key(enter)
+# [<phrase>] go back [<phrase>]:
+#     key(left)
 
+[<phrase>] go next [<phrase>]: edit.page_down()
+[<phrase>] go forward [<phrase>]: edit.page_down()
+
+[<phrase>] go back [<phrase>]: edit.page_up()

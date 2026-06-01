@@ -22,3 +22,6 @@ plot refresh: user.vscode("workbench.action.positronPlots.refresh")
 plot next: user.vscode("workbench.action.positronPlots.next")
 plot (previous | last): user.vscode("workbench.action.positronPlots.previous")
 plot toggle: user.vscode("workbench.action.positron.togglePlots")
+plot off: 
+    user.vscode("workbench.action.positron.togglePlots")
+    user.vscode("workbench.action.positron.togglePlots")
